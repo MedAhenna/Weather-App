@@ -1,19 +1,24 @@
 {
-    "name": "web-server",
-    "version": "1.0.0",
-    "type": "module",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "start": "node src/app.js"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "express": "^4.17.2",
-        "hbs": "^4.2.0",
-        "nodemon": "^2.0.15",
-        "request": "^2.88.2"
-    }
+  "name": "web-server",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest",
+    "test:coverage": "node --experimental-vm-modules node_modules/.bin/jest --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "hbs": "^4.2.0",
+    "nodemon": "^2.0.15",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
 }
